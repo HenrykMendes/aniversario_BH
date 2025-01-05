@@ -85,9 +85,3 @@ a {
 .botao-continuar {
   background-color: rgb(34, 34, 209);
 }
-
-.botao-continuar:hover {
-  background: aliceblue;
-  border: 2px solid blue;
-  color: #000;
-}
