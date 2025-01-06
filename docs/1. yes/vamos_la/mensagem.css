@@ -6,11 +6,11 @@
 }
 
 body {
-  width: 100%;
-  min-height: 110vh;
   display: flex;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  min-height: 110vh;
   background-color: rgb(231, 210, 207);
   padding: 8cap;
 }
@@ -74,7 +74,8 @@ h3 {
 }
 
 a {
-  width: 15%;
+  width: auto;
+  height: 50px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   background: rgb(255, 255, 255);
@@ -86,4 +87,11 @@ a {
 
 .botao-continuar {
   background-color: rgb(34, 34, 209);
+}
+
+.button .botao-continuar:hover{
+  background: white
+;
+  border: 2px solid blue;
+  color: #000;
 }
