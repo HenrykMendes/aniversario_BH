@@ -65,6 +65,17 @@ body {
 
 @media screen and (max-width: 1024px) {
     .container {
+        width: 90%;
+        padding: 25px;
         margin: auto;
+    }
+
+    .container .button{
+        gap: 20px;
+    }
+
+    .button a{
+        font-size: medium;
+        padding: 10px 20px;
     }
 }
