@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -14,7 +14,7 @@ body{
     background-color: rgb(231, 210, 207);
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,12 +28,12 @@ body{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.container .button{
+.container .button {
     display: flex;
     gap: 35px;
 }
 
-.button a{
+.button a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     background: rgb(255, 255, 255);
@@ -43,21 +43,28 @@ body{
     font-size: large;
 }
 
-.button .sim{
+.button .sim {
     background-color: rgb(34, 34, 209)
 }
 
-.button .nao{
+.button .nao {
     background-color: rgb(233, 117, 208);
 }
-.button .sim:hover{
+
+.button .sim:hover {
     background: transparent;
     border: 2px solid blue;
     color: #000;
 }
-.button .nao:hover{
+
+.button .nao:hover {
     background: transparent;
     border: 2px solid rgb(233, 117, 208);
     color: #000;
 }
 
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: auto;
+    }
+}
