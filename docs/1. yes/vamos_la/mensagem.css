@@ -59,12 +59,6 @@ h3 {
   transition: all 0.5s ease;
 }
 
-.card:hover {
-  width: 450px;
-  height: 450px;
-  transform: translate(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
 
 .button {
   display: flex;
@@ -89,9 +83,28 @@ a {
   background-color: rgb(34, 34, 209);
 }
 
-.button .botao-continuar:hover{
-  background: white
-;
+.button .botao-continuar:hover {
+  background: white;
   border: 2px solid blue;
   color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+
+  body {
+    padding: 4cap;
+  }
+
+  .sobre-ela {
+    padding: 10px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 14px;
+  }
+
+  h2 {
+    font-size: 3cap;
+  }
 }
