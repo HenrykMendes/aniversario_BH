@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../3. midia/bolo-de-aniversario.png">
     <title>For mu sunshine</title>
 </head>
 
@@ -18,15 +19,16 @@
             </div>
             <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
             <style>
-
-                .container{
+                .container {
                     max-width: min-content;
                 }
-                p{
+
+                p {
                     border-radius: 6px;
                     background-color: rgb(229, 238, 245);
                     padding: 10px;
                 }
+
                 @media screen and (max-width: 1024px) {
                     .container {
                         margin: auto;
@@ -35,10 +37,14 @@
             </style>
 
 
-            <p>Hoje é um dia especial, o dia em que o mundo ficou mais bonito porque você chegou. Feliz aniversário! 🎉<br>
+            <p>Hoje é um dia especial, o dia em que o mundo ficou mais bonito porque você chegou. Feliz aniversário!
+                🎉<br>
 
-                Desde as vezes que jogamos juntos, eu não imaginei que gostaria de você como gosto hoje. Cada vez que jogavamos era como se fosse um pedaço de uma história que a
-                gente está construindo,  rindo, ou conversando. Você tem um jeito único de transformar qualquer momento simples em algo divertido e eu sou grato por cada minuto com você, mesmo que,<em> por enquanto</em>, através de
+                Desde as vezes que jogamos juntos, eu não imaginei que gostaria de você como gosto hoje. Cada vez que
+                jogavamos era como se fosse um pedaço de uma história que a
+                gente está construindo, rindo, ou conversando. Você tem um jeito único de transformar qualquer momento
+                simples em algo divertido e eu sou grato por cada minuto com você, mesmo que,<em> por enquanto</em>,
+                através de
                 uma tela.
                 <br>
                 <br>
@@ -92,18 +98,49 @@
                     text-align: justify;
                 }
 
-                @media screen and  (max-width: 1024px){
-                   body{
-                    margin: auto;
-                   }
-                   .container{
+                .container .button {
                     display: flex;
-                    flex-direction: column;
-                    max-width: 80%;
-                   }
+                    gap: 35px;
                 }
 
+                .button a {
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    background: rgb(214, 15, 15);
+                    padding: 10px 30px;
+                    border-radius: 20px;
+                    transition: all 0.5s ease;
+                    font-size: large;
+                }
+
+                .button .sim {
+                    background-color: rgb(34, 34, 209)
+                }
+
+                .button .sim:hover {
+                    background: red;
+                    border: 2px solid rgb(0, 0, 0);
+                    color: #ffffff;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    body {
+                        margin: auto;
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                    }
+
+                    .container {
+                        gap: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 76%;
+                    }
+                }
             </style>
+            <div class="button">
+                <a href="../quinta_tela/quinta_tela.html" class="sim">Proximo</a>
+            </div>
         </div>
     </main>
 </body>
