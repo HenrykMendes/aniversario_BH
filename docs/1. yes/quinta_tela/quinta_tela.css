@@ -4,8 +4,15 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 50px;
     background: #0b1522;
+}
+
+.container {
+ 
+    text-align: center;
 }
 
 .coracao {
@@ -16,6 +23,7 @@ body {
     transform: rotate(-45deg);
     box-shadow: -20px 20px 90px #f70a0a;
     animation: coracao 0.6s linear infinite;
+    margin: 0 auto;
 }
 
 @keyframes coracao {
@@ -25,7 +33,6 @@ body {
     80% {
         transform: rotate(-45deg) scale(1.0);
     }
-
     100% {
         transform: rotate(-45deg) scale(0.8);
     }
@@ -40,7 +47,6 @@ body {
     top: -50%;
     border-radius: 60px;
     box-shadow: -20px -10px 90px #f70a0a;
-
 }
 
 .coracao::after {
@@ -52,4 +58,20 @@ body {
     right: -50%;
     border-radius: 60px;
     box-shadow: 20px 20px 90px #f70a0a;
+}
+
+.texto {
+    margin-top: 20px;
+    font-size: 40px;
+    color: white;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-17px);
+    }
 }
