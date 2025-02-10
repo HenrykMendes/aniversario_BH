@@ -64,7 +64,7 @@ body {
     margin-top: 20px;
     font-size: 40px;
     color: white;
-    animation: float 3s infinite ease-in-out;
+    animation: float 3s infinite ;
 }
 
 @keyframes float {
